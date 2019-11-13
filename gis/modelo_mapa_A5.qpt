@@ -115,7 +115,7 @@
    </custom-order>
   </layer-tree-group>
  </LayoutItem>
- <LayoutItem svgFillColor="0,0,0,255" uuid="{be4dc9ae-3dad-4d64-b0e3-d19942a1f887}" frameJoinStyle="miter" background="false" opacity="1" file="arrows/NorthArrow_10.svg" mapUuid="" referencePoint="0" northOffset="0" pictureHeight="6.05028" visibility="1" groupUuid="" size="6.64987,6.05028,mm" blendMode="0" anchorPoint="0" resizeMode="0" pictureWidth="4.67174" positionLock="true" pictureRotation="0" northMode="0" zValue="5" excludeFromExports="0" id="Norte" outlineWidthM="0.3,mm" itemRotation="0" position="196.315,136.325,mm" type="65640" frame="false" svgBorderColor="0,0,0,255" templateUuid="{be4dc9ae-3dad-4d64-b0e3-d19942a1f887}" svgBorderWidth="0.2" positionOnPage="196.315,136.325,mm">
+ <LayoutItem svgFillColor="0,0,0,255" uuid="{be4dc9ae-3dad-4d64-b0e3-d19942a1f887}" frameJoinStyle="miter" background="false" opacity="1" file="arrows/NorthArrow_10.svg" mapUuid="" referencePoint="0" northOffset="0" pictureHeight="4.95446" visibility="1" groupUuid="" size="4.40343,4.95446,mm" blendMode="0" anchorPoint="1" resizeMode="0" pictureWidth="3.8256" positionLock="true" pictureRotation="0" northMode="0" zValue="5" excludeFromExports="0" id="Norte" outlineWidthM="0.3,mm" itemRotation="0" position="198.265,137.256,mm" type="65640" frame="false" svgBorderColor="0,0,0,255" templateUuid="{be4dc9ae-3dad-4d64-b0e3-d19942a1f887}" svgBorderWidth="0.2" positionOnPage="198.265,137.256,mm">
   <FrameColor blue="0" alpha="255" red="0" green="0"/>
   <BackgroundColor blue="255" alpha="255" red="255" green="255"/>
   <LayoutObject>
@@ -129,7 +129,7 @@
    <customproperties/>
   </LayoutObject>
  </LayoutItem>
- <LayoutItem numSegmentsLeft="0" zValue="4" lineJoinStyle="miter" frameJoinStyle="miter" unitLabel="m" excludeFromExports="0" lineCapStyle="square" background="false" alignment="0" outlineWidth="0.3" blendMode="0" positionLock="true" visibility="1" height="2" numSegments="2" style="Line Ticks Up" referencePoint="0" groupUuid="" opacity="1" positionOnPage="155,133.55,mm" maxBarWidth="150" templateUuid="{b2207454-05ac-488f-a9dd-6fb74f0f946b}" boxContentSpace="3" labelBarSpace="1" mapUuid="{23a89c96-c015-4b5c-b2a3-df8155bbfa5d}" type="65646" numMapUnitsPerScaleBarUnit="1" frame="false" uuid="{b2207454-05ac-488f-a9dd-6fb74f0f946b}" position="155,133.55,mm" segmentMillimeters="12.4539" minBarWidth="50" segmentSizeMode="0" unitType="meters" size="37.4079,11.6,mm" outlineWidthM="0.3,mm" id="Escala" numUnitsPerSegment="0.25" itemRotation="0">
+ <LayoutItem numSegmentsLeft="0" zValue="4" lineJoinStyle="miter" frameJoinStyle="miter" unitLabel="km" excludeFromExports="0" lineCapStyle="square" background="false" alignment="0" outlineWidth="0.3" blendMode="0" positionLock="true" visibility="1" height="2" numSegments="2" style="Line Ticks Up" referencePoint="0" groupUuid="" opacity="1" positionOnPage="155,133.55,mm" maxBarWidth="150" templateUuid="{b2207454-05ac-488f-a9dd-6fb74f0f946b}" boxContentSpace="3" labelBarSpace="1" mapUuid="{23a89c96-c015-4b5c-b2a3-df8155bbfa5d}" type="65646" numMapUnitsPerScaleBarUnit="1" frame="false" uuid="{b2207454-05ac-488f-a9dd-6fb74f0f946b}" position="155,133.55,mm" segmentMillimeters="11.1876" minBarWidth="50" segmentSizeMode="0" unitType="km" size="35.8751,11.6,mm" outlineWidthM="0.3,mm" id="Escala" numUnitsPerSegment="25" itemRotation="0">
   <FrameColor blue="0" alpha="255" red="0" green="0"/>
   <BackgroundColor blue="255" alpha="255" red="255" green="255"/>
   <LayoutObject>
