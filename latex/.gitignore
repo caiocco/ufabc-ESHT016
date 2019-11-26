@@ -13,6 +13,5 @@
 *.synctex.gz
 *.xdy
 *.toc
-*.sh
 *.bib~
 *.lof
