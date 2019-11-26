@@ -237,6 +237,16 @@ oldfontcommands,
 	description={Núcleo Urbano Central}
 }
 
+\newglossaryentry{cic}{
+	name={CIC},
+	description={Cidade Industrial de Curitiba}
+}
+
+\newglossaryentry{ciar}{
+	name={CIAR},
+	description={Centro Industrial de Araucária}
+}
+
 %-----------------------------------------------------------
 %-----------------------------------------------------------
 % Comandos para definir ambientes tipo teorema em português 
@@ -755,17 +765,74 @@ oldfontcommands,
     
 	\section{Meio físico}
 	
+	% TODO - mais copia e cola: p. 30 do relatório do IPEA	
 	Segundo consta em estudos do IPEA, a legislação que versa sobre os recursos hídricos e proteção ambiental tem largo alcance na gestão da RM de Curitiba. Além da legislação federal, a legislação estadual possui uma série de documentos que fazem referência a esta função, como o Decreto Estadual no 6.194/2012 que declara as áreas de interesse de mananciais de abastecimento público. Contudo, a principal lei ligada aos recursos hídricos e proteção ambiental é a Lei Estadual no 12.248/1998. A Lei número 12.248/1998, conhecida como ``Lei dos Mananciais'', adota novos conceitos de gestão do uso e ocupação do solo dos mananciais da RM de Curitiba e concebe, a partir de necessidades identificadas, o ``tratamento diferenciado de áreas de manancial sob pressão por ocupação, compartilhamento do processo de decisão, entre estado e municípios, e a necessidade de um efetivo monitoramento e fiscalização do uso e ocupação do solo'' (Comec, 2013a). Entre outras inovações, esta Lei levou à criação do Sigprom, focado em variáveis de uso e ocupação do solo, buscando garantir, recuperar e preservar as características e condições necessárias para a manutenção dos mananciais para abastecimento. Os mecanismos de ação do Sigprom na gestão do uso e ocupação são, entre outros, as UTPs e APAs (que aglutinam áreas de diferentes municípios que devem ser trabalhadas em conjunto), o CGM (seu órgão máximo), que serão detalhados a seguir, além do Plano de Proteção Ambiental e Reordenamento Territorial (Ppart) em Áreas de Proteção aos Mananciais e do FPA, detalhado na seção 5. Entre os principais instrumentos de gestão, as UTPs são áreas de uso restritivo, ambientalmente frágeis, especialmente as do leste metropolitano, onde estão os mananciais e que estavam sendo sistematicamente ocupadas irregularmente há quase uma década. Os recortes territoriais das UTPs recebem zoneamento especial, de forma a reordenar o uso e ocupação do solo. Foram implantadas cinco UTPs na região.
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Unidades de conservação e hidrografia da \glsdesc{rmc}}
+			\label{fig:rmcconservacao}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_unid_conservacao}
+			\legend{Elaboração própria}
+		\end{figure}
+	\end{landscape}
 	
 	\section{Mobilidade pendular}
 	
 	% TODO - mais cópia do relatório a ser reescrita - p. 12
 	Quanto à capacidade de movimentação no espaço metropolitano, a mobilidade auferida pelo Censo de 2010 mostra que na RM de Curitiba, 384.754 pessoas (16,1\%) deslocavam-se do município de residência para estudar e/ou trabalhar em outro município, entre as 2,4 milhões de pessoas que estudavam e/ou trabalhavam. O principal motivo, segundo o Instituto Brasileiro de Geografia e Estatística (IBGE), era o trabalho. Dos 1.657.198 trabalhadores residentes na RM de Curitiba, 318.298 exerciam sua atividade em município diferente do de residência, o que corresponde a 19,2\%; para os moradores de Curitiba, o percentual de deslocamentos para outros municípios é de 6,3\% (Cintra, Delgado e Moura, 2012). Esta dinâmica se mostra acentuada entre os municípios integrantes do NUC, ainda que novos municípios tenham se integrado de forma incipiente à complexidade deste, conforme a figura abaixo.
 	
-	% TODO inserir mapas
+	\begin{figure}
+		\centering
+		\caption{RM de Curitiba: fluxo de entrada para trabalho (2010)}
+		\includegraphics[width=1.0\linewidth]{img/costa2015a_05}
+		\label{fig:costa2015a_05}
+		\legend{Fonte: \citeonline[p. 14]{costa2015a}}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\caption{RM de Curitiba: fluxo de saída para trabalho (2010)}
+		\includegraphics[width=1.0\linewidth]{img/costa2015a_06}
+		\label{fig:costa2015a_06}
+		\legend{Fonte: \citeonline[p. 14]{costa2015a}}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\caption{RM de Curitiba: fluxo de entrada para estudo (2010)}
+		\includegraphics[width=1.0\linewidth]{img/costa2015a_07}
+		\label{fig:costa2015a_07}
+		\legend{Fonte: \citeonline[p. 15]{costa2015a}}
+	\end{figure}
+
+	\begin{figure}
+		\centering
+		\caption{RM de Curitiba: fluxo de saída para estudo (2010)}
+		\includegraphics[width=1.0\linewidth]{img/costa2015a_08}
+		\label{fig:costa2015a_08}
+		\legend{Fonte: \citeonline[p. 15]{costa2015a}}
+	\end{figure}
 	
 	% TODO - mais cópia - p. 15
 	Os maiores fluxos de deslocamentos pendulares se dão entre as principais centralidades da rede urbana, e, ainda que multidirecional, a RM de Curitiba é o espaço no estado do Paraná onde as relações entre municípios possuem maior abrangência e intensidade.
+	
+	\section{Aspectos Econômicos}
+	
+	As décadas de 70 e 80 foram marcadas por uma concentração industrial no município de Curitiba (\glsdesc{cic} - \gls{cic}), e uma área adjacente que atingia o município de Araucária, em seu centro industrial (\gls{ciar}). No entanto, seu padrão se dava de forma dispersa no interior de ambos. Já na década de 90, a indústria se mostra desconcentrada no espaço urbano ampliado e mais concentrada no interior de alguns distritos. Apesar do processo de desconcentração, iniciado nos anos 70, a \gls{rmc} segue sendo o destino das principais capitais industriais, como também das pessoas. 
+	
+	São José dos Pinhais é apontado (Firkowski, 2002) como um indicador importante de mudanças na localização das indústrias, uma vez que apresenta uma inversão no padrão, pois o vetor de expansão fomentado sempre foi localizado à oeste, e São José dos Pinhais se encontra em direção contrária, a Leste. E é nessa região que predomina a concentração das indústrias, revelando conflitos importantes em relação ao uso do solo e questão ambiental, além de se especializarem de modo seletivo na \gls{rmc}, devendo ser ressaltado aqui a importância de se distinguir os limites da Região Metropolitana institucionalizados (26 municípios) e do aglomerado metropolitano (12 municípios). 
+	
+	Trata-se aqui de indústrias referentes a um mesmo processo produtivo, em que muitas são fornecedoras das indústrias automobilísticas, cuja ocupação não está na mesma planta, porém estão em suas proximidades. Este tipo de indústria produz um território específico, os distritos industriais, que são bem diferentes da formação do passado, baseado, sobretudo, no modelo de acumulação flexível. A localização de uma grande empresa não se faz independente e sozinha, como podia ocorrer no passado. A Volvo, quando se instalou em Curitiba no final da década de 70, não desencadeou a vinda de outras empresas no ritmo e velocidade com que isso ocorre na atualidade. Da mesma forma, sua localização se deu no interior de uma grande área industrial – um distrito industrial sob a ótica do uso do solo urbano, uma área reservada para uso industrial –, onde seus vizinhos não eram necessariamente do mesmo setor de atividade e tampouco complementares à sua produção.
+	
+	Atualmente, a inserção da indústria automobilística forma um tipo de distrito industrial ``fechado'', isto é, um complexo de produção flexível, cuja estratégia de localização é definida pela montadora e acompanhada pelos fornecedores. Ao serem observados os locais escolhidos pelos complexos de produção da indústria automobilística, veremos que estes se localizam preferencialmente onde as marcas de um forte passado industrial são praticamente inexistentes, e onde os novos métodos flexíveis de produção e organização da empresa não encontram barreiras físicas, sociais ou trabalhistas. Os novos locais escolhidos como o caso de Curitiba, são marcados como o novo, o que está por ser construído e não predeterminado por enclaves ou resistências. Além disso, somam-se a isso outros fatores, como o meio inovador, tecnologias, infra-estrutura específica como a rede de fibra óptica, diversidade de sinergias possíveis, parcerias, concentrações imateriais, dentre outros) e atores, tendo em vista que a escolha de uma localização não se dá unicamente pela supremacia das considerações técnicas e econômicas, mas também pelas oportunidades. 
+	
+	Essa estrutura de produção flexível carrega significativos entraves socioespaciais, sendo os ambientais os mais relevantes, dado o fundamento da escolha de localização pelos grandes grupos econômicos e a subordinação dos governos locais e estaduais em atender prontamente às demandas impostas, com receio de deixar escapar o capital para outras áreas.
+	
+	\begin{citacao}
+		(...) em todos os níveis da questão ambiental existem interesses conflitantes e, portanto, custos a serem alocados a determinados setores ou determinadas sociedades”, e quando o que está em jogo é a localização de grandes empresas, tais custos tendem a ser socializados pela população da área receptora desses capitais, mesmo que, num primeiro momento, ela não se dê conta de quão alto eles serão no futuro. (Martine, 1993, p. 38, citado por Firkowski, 2002) 
+	\end{citacao}
 
 	\chapter{Funções públicas de interesse comum}
 	
@@ -816,8 +883,18 @@ oldfontcommands,
 	\end{figure}
 	
 	\section{Moradia como função pública de interesse comum}
-
-
+	
+	% fonte cadastrada como vaccari2018a no fontes.bib
+	% plágio - p. 23 - https://acervodigital.ufpr.br/handle/1884/57167
+	Utilizando-se do novo modelo de planejamento e gestão metropolitanos no estado do Paraná, exigência advinda da aprovação em 2015 da Lei Federal 13.089 - Estatuto da Metrópole -, é preciso compreender como os PDIs influenciam para a discussão da redefinição e gestão das FPICs na metrópole de Curitiba. Segundo o artigo que recebe o mesmo título deste subcapítulo, da autora Lorreini Vaccari, de acordo com os PDIs, verificou-se a interpretação da moradia como demanda metropolitana setorial, limitada à produção de habitação e lotes para a população de baixa renda, cabendo ao órgão metropolitano um papel auxiliar, de suporte à COPAHAR e à COHAB-CT. Observou-se também a não utilização de ferramentas e ações específicas e articuladas aos instrumentos de uso do solo para o tratamento da moradia na metrópole, confirmando-se que a questão não possui centralidade no planejamento metropolitano e nem é interpretada como FPIC geradora e articuladora das demais demandas urbano-metropolitanas. Segundo a autora, tal visão setorial é também recorrente e estruturante dos discursos, técnico e político vigentes. O não reconhecimento da moradia como FPIC contribui para o enfraquecimento do planejamento urbano na metrópole de Curitiba, bem como do próprio órgão metropolitano, que ao interpretar a moradia setorialmente e não articulada às demandas metropolitanas, limita sua ação e o potencial de seus efeitos sociais e territoriais, reproduzindo e contribuindo com o aprofundamento das desigualdades socioespaciais.
+	
+	A partir dessa perspectiva, e compreendendo a metrópole contemporânea como um produto do processo de metropolização do espaço, definido como um momento de maior complexidade da urbanização, é preciso que se articulem esses territórios urbanizados, que como demonstrado em seu desenvolvimento histórico, foi caracterizado pela fragmentação e aprofundamento das desigualdades socioespaciais e pela ampliação da polarização social, bem como pela complexificação das relações socioeconômicas e sociopolíticas.
+	
+	Historicamente, os planos e programas de investimento implementados pela COMEC não tiveram vigor suficiente para alterar a realidade do processo de produção do espaço metropolitano a partir da lógica de periferização e precarização da moradia que, capturada pela lógica de cidade mercadoria, produz uma metrópole cada vez mais marcada pela segregação socioespacial, permitindo evidenciar a moradia como questão fundamental e FPIC central para o planejamento metropolitano. 
+	
+	A questão da moradia também revela o modelo a partir do qual a metropolização brasileira tem se consolidado, com profundas desigualdades socioespaciais. Estudos realizados pela Fundação João Pinheiro em parceria com o Ministério das Cidades, apresentaram para o Censo de 2010, uma carência de 6 milhões e 940 mil unidades, com 85\% desse total localizado em áreas urbanas e déficit habitacional urbano relativo às regiões metropolitanas estimado em 3 milhões e 299 mil unidades, ou seja, aproximadamente 50\% do déficit habitacional do país (FJP, 2013).
+	
+	De acordo com a pesquisa de Vaccari, a constatação de que a moradia não foi arrolada legalmente como FPIC na RMC e não constitui elemento orientador da atuação da Coordenação da Região Metropolitana de Curitiba (COMEC), desde a sua criação, associada à atuação setorial e desvinculada de uma política pública de moradia metropolitana do Governo do Estado do Paraná e da Prefeitura Municipal de Curitiba no tratamento da problemática da moradia na metrópole, permitiram formular o problema de pesquisa, que parte basicamente do fato de que, se a moradia pode ser entendida como geradora das demais demandas da população urbano-metropolitana e, portanto, transversal e articuladora das demais FPICs, o não reconhecimento da moradia como questão central e crucial ao planejamento territorial, reforça o tratamento setorial das políticas urbanas, aprofundando as desigualdades socioespaciais. Assim, o não reconhecimento da moradia como FPIC pela entidade metropolitana contribui para o enfraquecimento do planejamento urbano como tributário do acesso à metrópole em Curitiba, bem como da própria entidade metropolitana, que deveria ser a instância mediadora e articuladora dos entes federativos para a gestão dos interesses comuns metropolitanos.
 	
 	\section{Outras funções públicas de interesse comum}
 	
@@ -829,7 +906,11 @@ oldfontcommands,
 	
 	\section{IPARDES}
 	
+	\section{IPPUC}
+	
 	\chapter{Orçamento e financiamento}
+	
+	Pendente. Ninguém contribuiu desde 14/out.
 	
 	\chapter{Governança}
 	
