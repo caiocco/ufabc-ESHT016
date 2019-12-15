@@ -150,6 +150,17 @@ oldfontcommands,
 % Caio - quero usar letras nas listas do enumerate conforme https://tex.stackexchange.com/questions/2291/how-do-i-change-the-enumerate-list-format-to-use-letters-instead-of-the-defaul
 \usepackage{enumitem}
 
+% Caio - listas de códigos
+\usepackage{listings}
+
+\lstset{
+	breaklines=true,
+	breakatwhitespace=false,
+	numbers=left,
+	numbersep=5pt,
+	numberstyle=\tiny\color{gray}
+}
+
 % Caio - modo paisagem para tabelões
 \usepackage{lscape}
 
@@ -270,6 +281,31 @@ oldfontcommands,
 \newglossaryentry{dnaee}{
 	name={DNAEE},
 	description={Departamento Nacional de Água e Energia Elétrica}
+}
+
+\newglossaryentry{sanepar}{
+	name={SANEPAR},
+	description={Companhia de Saneamento do Paraná}
+}
+
+\newglossaryentry{agepar}{
+	name={AGEPAR},
+	description={Agência Reguladora do Paraná}
+}
+
+\newglossaryentry{snis}{
+	name={SNIS},
+	description={Sistema Nacional de Informações sobre Saneamento}
+}
+
+\newglossaryentry{rais}{
+	name={RAIS},
+	description={Relação anual de informações sociais}
+}
+
+\newglossaryentry{fjp}{
+	name={FJP},
+	description={Fundação João Pinheiro}
 }
 
 %-----------------------------------------------------------
@@ -527,8 +563,8 @@ oldfontcommands,
 % Informações de dados para CAPA, FOLHA DE ROSTO e FOLHA DE DEFESA
 %
 %----------------- Título e Dados do Autor -----------------
-\titulo{Produto III: Caderno de Sustentação}
-\autor{Caio César C. Ortega \and Gustavo Lopes Alcantara \and Mariana Lins Sartori \and Michele Almeida \and Victor Aranha Pereira
+\titulo{Caderno de Sustentação}
+\autor{Caio César C. Ortega \and Gustavo Lopes Alcantara \and Mariana Lins Sartori \and Michele Almeida
 }
 %
 
@@ -667,18 +703,21 @@ oldfontcommands,
 	%===============================================================================
 	%
 	
-	\chapter{Contextualização}
+	\chapter{Diagnóstico}
+	
+	\section{Contextualização}
 	
 	A \glsdesc{rmc} (\gls{rmc}) foi criada pela Lei Complementar  nº 14, de 8 de junho de 1973, que instituiu as primeiras Regiões Metropolitanas brasileiras, sendo elas: São Paulo, Belo Horizonte, Porto Alegre, Recife, Salvador, Curitiba, Belém e Fortaleza. Primeiramente, a RMC era composta por quatorze municípios: Almirante Tamandaré, Araucária, Balsa Nova, Bocaiúva do Sul, Campina Grande do Sul, Campo Largo, Colombo, Contenda, Curitiba, Mandirituba, Piraquara, Quatro Barras, Rio Branco do Sul e São José dos Pinhais. Contudo, após o marco da Constituição Federal de 1988 (CF/1998), a competência de criação e gerenciamento das RMs passa a ser do Estado. Dessa forma, foram adicionados mais quinze municípios, destes, cinco são frutos de desmembramentos (Campo Magro, Tunas do Paraná, Fazenda Rio Grande, Pinhais e Itaperuçu) e dez de legislações estaduais (Adrianópolis, Agudos do Sul, Campo do Tenente, Cerro Azul, Doutor Ulysses, Lapa, Piên, Quitandinha, Rio Negro e Tijucas do Sul).
 	
-	\section{Revisão bibliográfica}
+	\subsection{Breves novas sobre a revisão bibliográfica}
 	
 	As diversas publicações sobre a \gls{rmc} indicam que ela cresceu demasiadamente nas últimas décadas, concentrando a maioria da população e da riqueza do estado do Paraná, isso se deve ao fato de três municípios com os maiores PIBs do Estado estarem na \gls{rmc}, e estes três também figuram como as três cidades paranaenses entre os cinquenta maiores PIBs municipais do país: Curitiba, 4o lugar, polo industrial de comércio e serviços; São José dos Pinhais, 37º. lugar, polo automotivo e sede do aeroporto internacional de Curitiba; e Araucária, 40º. lugar, polo petroquímico e industrial –, possuindo um PIB per capita superior à média nacional, regional (Sul) e estadual. Sua importância econômica acentua o fato de que a rede urbana paranaense, assim como a sulina, concentra os fluxos por atividades de maior complexidade, para um pequeno número de centros que se constituem como polos, demonstrando a seletividade dos lugares com tendência concentradora (IPEA).
 	%TODO corrigir IPEA acima, referência insatisfatória
 	
 	Porém os desafios da \gls{rmc} são imensos, devido ao fato de que, no passado, o município de Curitiba concentrou todo tipo de investimento em detrimento ao resto da região, e ele não planejava com nenhum viés metropolitano, abstendo apenas a focar em medidas apenas locais. em 1965 é criado o \glsdesc{ippuc}, o \gls{ippuc}, que  visava o planejamento em Curitiba, já que era a cidade mais rica e importante do Estado, e só no ano de 1974, como decorrência direta das instruções contidas na Lei Complementar nº 14. o Governo do Estado do Paraná, através de Lei Estadual nº. 6.517, criou a \glsdesc{comec}, \gls{comec}, porém, por Curitiba ser um polo muito forte, a \gls{comec} não conseguiu ter o real impacto que precisava, e o planejamento continuou a ter concentrado no município que dá nome à RM, somente com a entrada das montadoras na região, que vão se instalar nas cidades vizinhas de Curitiba é que ela vai perder um pouco do seu tão grandioso protagonismo, mas nada que mudasse tanto as estruturas. 
 
-	\section{Histórico da Região Metropolitana de Curitiba}
+	\subsection{Histórico da Região Metropolitana de Curitiba}
+	% tópico escrito por Caio
 	
 	O surgimento da \glsdesc{rmc} se dá no bojo da ditadura militar, sendo realizado pela mesma lei complementar que deu providências para a criação de outras novas regiões metropolitanas brasileiras:
 	
@@ -709,7 +748,8 @@ oldfontcommands,
 		\legend{Fonte: \citeonline{comec2019a}}
 	\end{figure}
 	
-	\section{Metropolização a luz da Constituição Federal de 1988}
+	\subsection{Metropolização a luz da Constituição Federal de 1988}
+	% tópico escrito por Caio
 	
 	Como apontado por \citeonline[p. 100]{guia2015a}, a autonomia municipal, por ter sido cerceada durante um longo período em decorrência da ditadura militar, ganha força com a Constituição Federal de 1988. O marco da nova Constituição é especialmente importante, pois as insatisfações ``induzem a uma resistência explícita à questão metropolitana, manifesta não só entre os representantes do poder público municipal, como também entre os juristas, parlamentares e estudiosos em geral, afetos a questões urbanas'', em outras palavras, é chegado o momento no qual a palavra de ordem é a municipalização, devido ao neolocalismo que pretendia resgatar significativamente não só sua autonomia, mas também capacidade de investimento.
 	
@@ -726,8 +766,100 @@ oldfontcommands,
 	\begin{citacao}
 		``Acredita-se que, nesse aspecto, o centro dos problemas enfrentados encontra-se na definição de critérios para o rateio das despesas e dos investimentos, questão diretamente vinculada à relação entre a cidade-pólo e os demais municípios que integram a região. Na ausência de regras claras, os municípios maiores de cada região metropolitana, bem como os governos estaduais, quase sempre resistem à regulamentação de instrumentos e mecanismos concretos de repasse de recursos para as agências metropolitanas, uma vez que temem aportar maior volume dos recursos sem necessariamente uma contrapartida proporcional no que respeita ao processo de tomada de decisão quanto à alocação desses recursos. Em uma situação como essa, os pressupostos elementares da lógica da ação coletiva indicam que o comportamento dos estados e dos municípios de maior peso não chega a surpreender, já que os custos financeiros seriam, via de regra, maiores do que os possíveis retornos políticos auferidos.''
 	\end{citacao}
+
+	\section{Machine Learning no processo de diagnóstico da RMC} \label{sec:machine}
 	
-	\chapter{Características da região}
+	\subsection{Machine Learning}
+	
+	O \textit{Machine Learning} é uma sub-área de inteligência artificial, na qual o termo se refere à capacidade dos sistemas de computação de encontrar soluções para problemas de forma independente, reconhecendo padrões nos bancos de dados \cite{jordan2015a}. Em outras palavras: o Machine Learning permite que os sistemas de TI reconheçam padrões com base nos algoritmos e conjuntos de dados existentes, e desenvolvam conceitos e soluções adequadas com sem depender do \textit{input} e, logo, da subjetividade humana. 
+	
+	A autonomia e imparcialidade dos resultados trazidos pelo Machine Learning, assim como sua praticidade, são, segundo \citeonline{jordan2015a}, alguns dos principais pontos que fizeram com que este modelo de trabalho evoluísse tanto nas últimas duas décadas. 
+	Entretanto, o fator decisivo para que essa técnica fosse tão trabalhada, incentivada e investida, é devido a quantidade de aplicações e campos que ela abrange, desde os mais ligados ao seu próprio setor de tecnologia como reconhecimento de objetos e linguagem natural em robôs, até aplicações em medicina, segurança, \textit{banking} e ciências sociais.
+	
+	\begin{citacao}
+		``Many developers of AI systems now recognize that, for many applications, it can be far easier to train a system by showing it examples of desired input-output behavior than to program it manually by anticipating the desired response for all possible inputs. The effect of machine learning has also been felt broadly across computer science and across a range of industries concerned with data-intensive issues, such as consumer services, the diagnosis of faults in complex systems, and the control of logistics chains.'' \cite[p. 255]{jordan2015a}
+	\end{citacao}
+
+	Neste trabalho, buscamos explorar as vantagens do Machine Learning para obter mais insumos no momento de definição e diagnóstico do espaço geográfico da \glsdesc{rmc}, de uma ótica mais quantitativa.
+	
+	\subsection{K-Means}
+	
+	O \textit{K-Means} é uma técnica de Machine Learning de clusterização (``\textit{clustering}'') utilizada em diversas áreas, baseada na distância matricial euclidiana entre pontos de dados \cite{hartigan1979a}. Seu objetivo é agrupar pontos de dados semelhantes e descobrir padrões subjacentes, sem que qualquer resposta esperada seja previamente declarada.
+	
+	Operacionalmente, o algoritmo inicia sua tentativa de agrupamento de semelhantes com $k$ grupos iniciais (``\textit{seeds}''). Cada dado plotado na matriz tem sua distância euclidiana comparada com um dos $k$ grupos iniciais e é associado ao de menor erro. Esse processo é repetido inúmeras vezes, sendo em que cada uma delas os $k$ grupos são deslocadas para minimizar a distância/erro entre os dados a serem agrupados, até que sua posição seja otimizada e definida. 
+
+	\begin{figure}
+		\centering
+		\caption{Representação de operacionalização do K-Means}
+		\label{fig:kmeans}
+		\includegraphics[width=1\linewidth]{img/machine_A}
+		\legend{Elaboração própria}
+	\end{figure}
+
+	\subsection{Aplicação do K-Means na \gls{rmc}}
+	
+	Para a aplicação da técnica K-Means neste trabalho, foi utilizada a sintaxe de programação Python por meio do software Jupyter Notebook. Todo o código desenvolvido encontra-se no \autoref{ap:jupyter} deste documento
+	
+	\subsection{Público}
+	Como o objetivo deste modelo estatístico era ajudar no diagnóstico da \glsdesc{rmc}, a granularidade do público considerada, ou seja, os pontos a serem plotados na matriz e clusterizados/agrupados, foram todas as 29 cidades que compõe atualmente a \gls{rmc}.
+	
+	As variáveis utilizadas no desenvolvimento do modelo foram extraídas das seguintes fontes:
+	
+	\begin{itemize}
+		\item \gls{ipardes} - \glsdesc{ipardes}
+		\item \gls{ibge} - \glsdesc{ibge}
+		\item \gls{rais} - \glsdesc{rais}
+		\item \gls{fjp} - \glsdesc{fjp}
+		\item \gls{snis} - \glsdesc{snis}
+		\item \gls{sanepar} - \glsdesc{sanepar}
+	\end{itemize}
+
+	Para processo de seleção, foram retiradas variáveis com altos níveis de correlação para não enviesar o resultado. 
+	
+	Por fim, foram mantidas 107 variáveis. Através delas, buscamos representar ao máximo todas as esferas possíveis de cada uma das cidades como emprego, renda, mobilidade, saneamento, qualidade de vida, evolução populacional, etc, para ter um bom diagnóstico da situação. Importante ressaltar que não foram utilizadas variáveis cartográficas propositalmente, para não enviesar o modelo a criar clusters por distâncias absolutas entre cidades.
+	
+	\subsection{Resultado do processo}
+	
+	O algoritmo K-Means gerou um bom resultado utilizando-se de 5 clusters, segundo o \textit{output} representado pela \autoref{fig:kmeansoutput}:
+	
+	\begin{figure}
+		\centering
+		\caption{Output K-Means Jupyter Notebook}
+		\label{fig:kmeansoutput}
+		\includegraphics{img/machine_B}
+		\legend{Elaboração própria}
+	\end{figure}
+
+	É possível notar que um dos clusters destaca-se dos outros (estrela preta) em relação à distância dentro da matriz. Este cluster é composto de uma única cidade: Curitiba, capital da RMC. Este resultado não é inesperado, e representa a disparidade entre a maioria dos dados coletados entre a capital e outras cidades que integram a região metropolitana.
+	
+	Dos outros quatro grupos formados, podemos notar que os dois pontos no centro da matriz estão sobrepostos. Em análise analítica, pudemos constatar que estes clusters não possuem distância significativa de centroide e por isto, para este exercício, serão agrupados e considerados como um só.
+	
+	Aplicando o resultado no mapa, temos a \autoref{fig:rmcclusters}:
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Agrupamento dos municípios da \glsdesc{rmc} por similaridade}
+			\label{fig:rmcclusters}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_clusters}
+			\legend{Elaboração própria}
+		\end{figure}
+	\end{landscape}
+
+	A partir do mapa da \autoref{fig:rmcclusters}, é claro notar que a clusterização resultou em um diagnóstico já esperado, em que as cidades do extremo norte e sul, ou seja, que as cidades fora do núcleo urbano formam um único cluster devido as similaridades entre si, e diferenças em relação as cidades mais centrais. O ponto inesperado foi a  cidade de Quatro Barras que, apesar de estar em localização mais central, foi classificada junto às extremidades.
+	
+	Os clusters intermediários geraram o seguinte agrupamento:
+	
+	\begin{itemize}
+		\item Cluster azul claro (3): Araucária, Colombo, Campo Magro, Campo Largo e Pinhais;
+		\item Cluster branco (4): Almirante Tamandaré, Campina Grande do Sul, Piraraquara, São José dos Pinhais, Fazenda Rio Grande.
+	\end{itemize}
+	
+	Por fim, como já citado, Curitiba possui seu próprio cluster devido à disparidade de suas características em relação aos demais municípios.
+	
+	Em conclusão, a aplicação do método de Machine Learning K-Means para diagnóstico da \gls{rmc} se provou eficaz. O resultado deste modelo estatístico serviu como um dos principais insumos de informação para a recomendação de trabalho que traremos no decorrer deste texto, já a partir da seção seguinte (\autoref{sec:carac}).
+	
+	\section{Características da região} \label{sec:carac}
 	
 	Atualmente, a Região Metropolitana de Curitiba possui a maior extensão entre as RMs brasileiras apontadas pelo estudo \gls{regic} \cite{regic2008a}, abrangendo uma área de 16.627 km², o equivalente a 8\% do território do Paraná e população estimada de 3.285.251, em 2012 (Ipardes, 2013a), correspondente a 31\% da população estadual. A \autoref{fig:rmcconfigatual} espacializa a atual configuração da \gls{rmc} a partir de dados do \gls{ibge}.
 	
@@ -741,7 +873,7 @@ oldfontcommands,
 		\end{figure}
 	\end{landscape}
 
-	\section{Dinâmica populacional}
+	\subsection{Dinâmica populacional}
 	
 	% TODO rever isso aqui
 	A RM de Curitiba reúne cerca de 27\% da população do Estado,  uma proporção menor que a média das regiões metropolitanas do país (38,61\%) (IBGE, 1991 e 1996), mas revela um  crescimento de 266,27\% em relação ao período inicial da aceleração do processo de urbanização regional, nos anos, (Lima, C., Mendonça, F., 2001, p., 140).
@@ -794,7 +926,7 @@ oldfontcommands,
 		\legend{Fonte: \citeonline[p. 12]{costa2015a}}
 	\end{figure}
     
-	\section{Meio físico}
+	\subsection{Meio físico}
 	
 	% TODO - mais copia e cola: p. 30 do relatório do IPEA
 	Segundo consta em estudos do IPEA, a legislação que versa sobre os recursos hídricos e proteção ambiental tem largo alcance na gestão da RM de Curitiba. Além da legislação federal, a legislação estadual possui uma série de documentos que fazem referência a esta função, como o Decreto Estadual no 6.194/2012 que declara as áreas de interesse de mananciais de abastecimento público. Contudo, a principal lei ligada aos recursos hídricos e proteção ambiental é a Lei Estadual no 12.248/1998. A Lei número 12.248/1998, conhecida como ``Lei dos Mananciais'', adota novos conceitos de gestão do uso e ocupação do solo dos mananciais da RM de Curitiba e concebe, a partir de necessidades identificadas, o ``tratamento diferenciado de áreas de manancial sob pressão por ocupação, compartilhamento do processo de decisão, entre estado e municípios, e a necessidade de um efetivo monitoramento e fiscalização do uso e ocupação do solo'' (Comec, 2013a). Entre outras inovações, esta Lei levou à criação do Sigprom, focado em variáveis de uso e ocupação do solo, buscando garantir, recuperar e preservar as características e condições necessárias para a manutenção dos mananciais para abastecimento. Os mecanismos de ação do Sigprom na gestão do uso e ocupação são, entre outros, as UTPs e APAs (que aglutinam áreas de diferentes municípios que devem ser trabalhadas em conjunto), o CGM (seu órgão máximo), que serão detalhados a seguir, além do Plano de Proteção Ambiental e Reordenamento Territorial (Ppart) em Áreas de Proteção aos Mananciais e do FPA, detalhado na seção 5. Entre os principais instrumentos de gestão, as UTPs são áreas de uso restritivo, ambientalmente frágeis, especialmente as do leste metropolitano, onde estão os mananciais e que estavam sendo sistematicamente ocupadas irregularmente há quase uma década. Os recortes territoriais das UTPs recebem zoneamento especial, de forma a reordenar o uso e ocupação do solo. Foram implantadas cinco UTPs na região.
@@ -809,7 +941,8 @@ oldfontcommands,
 		\end{figure}
 	\end{landscape}
 	
-	\section{Mobilidade pendular}
+	\subsection{Mobilidade pendular}
+	% feito por Caio ou Michele
 	
 	Conforme \citeonline[p. 12]{costa2015a}, os dois principais motivos de deslocamento entre os municípios da RM são estudo e trabalho, sendo que este último ocupa a primeira posição. De acordo com os dados do Censo das 2,4 milhões que estudavam ou trabalhavam, 384.754 delas se deslocavam por esses motivos, isto é, cerca de 16\%).
 	
@@ -849,9 +982,10 @@ oldfontcommands,
 		\legend{Fonte: \citeonline[p. 15]{costa2015a}}
 	\end{figure}
 	
-	\section{Aspectos Econômicos}
+	\subsection{Aspectos Econômicos}
 	
-	\subsection{Processo Econômico Produtivo}
+	\subsubsection{Processo Econômico Produtivo}
+	% reescrito por Michele
 	
 	As décadas de 70 e 80 foram marcadas por uma concentração industrial no município de Curitiba (\glsdesc{cic} - \gls{cic}), e uma área adjacente que atingia o município de Araucária, em seu centro industrial (\gls{ciar}). No entanto, seu padrão se dava de forma fragmentada no interior de ambos. Já na década de 90, a indústria se mostra desconcentrada no espaço urbano ampliado e mais concentrada no interior de alguns distritos. Apesar do processo de desconcentração, iniciado nos anos 70, a \gls{rmc} segue sendo o destino das principais capitais industriais, como também das pessoas \cite{firkowski2002b}.
 	
@@ -891,7 +1025,7 @@ oldfontcommands,
 
 	A partir dos anos 90 as problemáticas se intensificaram ainda mais, visto que as transformações da RM se originaram a partir da ocupação das áreas de mananciais. Nesse contexto, a Lei de Proteção aos Mananciais surgiu como meio de conter o avançando das ocupações irregulares, assegurando por meio das Unidades Territoriais de Planejamento (\gls{utp}) a conservação do meio ambiente com vistas a garantir também o crescimento econômico. Dessa forma, haveria uma maior flexibilidade, permitindo com que houve mais diversificação na ocupação do solo, não estando limitados severamente pela lei. Logo, tais transformações legislativas promoveram outros interesses, que não os ambientais, mas sobretudo os imobiliários, a partir de uma aliança entre o público e o privado.
 	
-	\section{Concentração e Influência da Metrópole}
+	\subsection{Concentração e Influência da Metrópole}
 		
 	Segundo \citeonline[p. 10]{costa2015a}, Curitiba é uma cidade polarizadora, que estabelece relações com outras aglomerações, aliado a isso, sua economia garante um papel importante na conformação da rede urbana, fazendo com que sua influência transborde a RM na qual está inserida. Assim sendo, ultrapassa o próximo estado, fazendo conexões até mesmo com alguns municípios de Santa Catarina. Análise esta também reiterada por \citeonline[p. 32]{moura2001a}, que aponta que ``Curitiba tem a peculiaridade de, além de polarizar toda a rede urbana paranaense, transcender sua polarização para o Estado de Santa Catarina, inserindo em sua rede as áreas de abrangência das principais centralidades catarinenses''. A rodovia BR-116 é um eixo articulador importante:
 	
@@ -927,7 +1061,8 @@ oldfontcommands,
 		``A extensão da polarização de Curitiba, abrangendo todo o território do Paraná, e a extrapolação para territórios de estados vizinhos, em especial Santa Catarina, consolidam a centralidade regional da RM de Curitiba e demonstram a dimensão dessa polarização. Tal condição indica que, além de população e riqueza, concentra funções econômicas superiores, bem como uma posição de centro de poder, de decisão e de gestão.'' \apud{rodrigues2009a}{costa2015a}
 	\end{citacao}
 	
-	\section{Desigualdades Socioeconômicas}
+	\subsection{Desigualdades Socioeconômicas}
+	% reescrito por Michele
 	
 	Segundo demonstrado por \citeonline[p. 17]{costa2015a} em seu relatório de pesquisa, as distâncias mais curtas e a inclusão dos municípios na RM não bastaram para que as desigualdades sociais também se encurtasse. Pelo contrário, o caráter concentrador de Curitiba permanece, sua taxa de pobre está em torno de 8\%, enquanto que para os demais integrantes do \gls{nuc} variam de 14\% a 35\%. E isso fica mais preocupante ao se olhar para os municípios que não pertencem ao eixo central, apresentando alguns taxa superior a 50\%, como é o caso de Doutor Ulysses. 
 	
@@ -943,7 +1078,8 @@ oldfontcommands,
 		\legend{Fonte: \citeonline[p. 17]{costa2015a}}
 	\end{table}
 	
-	\section{Ocupação Desordenada}
+	\subsection{Ocupação Desordenada}
+	% reescrito por Michele
 	
 	Segundo \citeonline[p. 53]{castro2005a}, Curitiba observa a implementação de seus sistemas viários a partir da Segunda Guerra Mundial, processo este que a favorece como um ``centro de convergência e distribuição de grande parte da produção econômica no estado'' \apud[p. 52]{ipea2001a}{castro2005a}. Na mesma época surgem também (i) o primeiro assentamento precário do município, uma vez que a ocupação urbana fora impulsionada pelo processo de industrialização; e (ii) o planejamento urbano formal, por meio do Plano Agache de 1943, ``que tinha por objetivo definir as diretrizes de crescimento e ordenamento da cidade'', elencando ``o saneamento, o descongestionamento de vias e a definição de áreas para a habitação, serviços e indústrias'' como prioridade \cite[p. 52]{castro2005a}.
 	
@@ -1005,9 +1141,10 @@ oldfontcommands,
 	
 	Entre 1992 e 1997, o número de ocupações irregulares nos municípios do leste enfocados no trabalho – Pinhais, Piraquara e São José dos Pinhais – cresceu cerca de 4,5 vezes em cinco anos, o que pode significar que, a cada ano, instalaram-se precariamente nestes municípios cerca de 5.783 pessoas ou, a cada dia, mais de 15 pessoas, ou quatro famílias, considerando uma média regional de componentes da unidade familiar. Este valor atinge, em 1997, um total de 38.221 pessoas, nos três municípios, em estado de carência generalizada, pois as ocupações irregulares normalmente formam um quadro de extrema precariedade, não apenas quanto aos assentamentos em si, na sua materialidade, mas principalmente no que se refere à precariedade física, de formação profissional e da cidadania dos seus moradores.
 
-	\chapter{Funções públicas de interesse comum}
+	\section{Funções públicas de interesse comum}
 	
-	\section{Recursos hídricos e proteção ambiental}
+	\subsection{Recursos hídricos e proteção ambiental}
+	% escrito por Caio
 	
 	Segundo \citeonline[p. 427]{kornin2014a}, ``a área de proteção dos mananciais da \gls{rmc} abrange quase todos os municípios metropolitanos'', existindo ainda espaços de conflito na esteira na expansão da mancha urbana da capital e das áreas de entorno direto ao polo, sendo estes associados com ``a urbanização e a necessidade de manutenção da qualidade hídrica e ambiental dos mananciais de abastecimento''. A \autoref{fig:kornin2014a_01} espacializa os corpos hídricos relevantes e os mananciais protegidos nos termos do Decreto Estadual n.º 6.194/12.
 	
@@ -1027,9 +1164,51 @@ oldfontcommands,
 
 	Como recomenda \cite[p. 6]{andreoli1999a},``os mananciais para abastecimento público devem apresentar uma distância das cidades a serem abastecidas viável em termos econômicos sem perder de vista o equilíbrio de sua preservação'', no entanto, a \gls{rmc} viola a recomendação, uma vez que os mananciais são caracterizadas pela proximidade com uma urbanização que se expandiu espontaneamente sobre eles, o que se traduz em: (i) abandono dos investimentos realizados; e (ii) formação de ``verdadeiros cadáveres hídricos, que poluem e envergonham as cidades''.
 
-	\section{Saneamento básico}
+	\subsection{Saneamento básico}
+	% feito pela Mari e incorporado em 15/12/2019
 	
-	\section{Transportes e sistema viário}
+	O Saneamento Básico da Região Metropolitana de Curitiba é gerido atualmente pela \gls{sanepar}, e regulada e fiscalizada pela \gls{agepar} desde 28 de dezembro de 2016, após publicação da Lei Complementar 202.
+	
+	A SANEPAR, que possui sua sede em Curitiba, foi fundada na década de 1960 e hoje em dia atende não apenas a \gls{rmc}, mas 346 dos 399 municípios do Paraná, tornando-a uma das maiores empresas do Estado. É responsável por 54 mil quilômetros de tubulações utilizadas na distribuição de água potável, atendendo 100\% da população urbana dos municípios que serve, e 35 mil quilômetros de rede coletora de esgoto, atendendo 72.5\% da população urbana. Este percentual de atendimento é maior que a média nacional que, segundo o \gls{snis}, é de apenas 59.7\%. 
+	
+	\begin{citacao}
+		``Com base nos dados do Sistema Nacional de Informações sobre Saneamento - \gls{snis} 2014, é válido afirmar que o Estado do Paraná apresenta desafios na gestão de resíduos sólidos similares ao âmbito nacional, como a necessidade de erradicar os lixões. Por outro lado, apresenta alguns dados mais satisfatórios do que a média nacional, como a disposição adequada, que é de 26\% para o Brasil e no Paraná chega a 45\%, com 50\% para o Rio Grande do Sul e 65\% para o Estado de Santa Catarina.'' \cite{anjos2016a}
+	\end{citacao}
+
+	Foram confeccionados mapas com percentual de atendimento por município da \gls{rmc}, vide \autoref{fig:saneamentototal}, \autoref{fig:saneamentourbano} e \autoref{fig:saneamentorede}. Vale ressaltar que para os municípios de Adrianópolis, Tunas do Paraná, Rio Branco do Sul, Tijucas do Sul, Piên e Campo do Tenente não foram encontrados dados de atendimento de esgoto em nenhuma fonte de informação oficial (\gls{snis} ou \gls{sanepar}), o que pode indicar uma rede urbana incipiente.
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Atendimento Saneamento Total}
+			\label{fig:saneamentototal}
+			\includegraphics[width=0.80\linewidth]{img/snis_A}
+			\legend{Fonte: SNIS, 2017. Elaboração própria}
+		\end{figure}
+	\end{landscape}
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Atendimento Saneamento Urbano}
+			\label{fig:saneamentourbano}
+			\includegraphics[width=0.80\linewidth]{img/snis_B}
+			\legend{Fonte: SNIS, 2017. Elaboração própria}
+		\end{figure}
+	\end{landscape}
+
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Atendimento por rede de distribuição de água}
+			\label{fig:saneamentorede}
+			\includegraphics[width=0.80\linewidth]{img/snis_C}
+			\legend{Fonte: SNIS, 2017. Elaboração própria}
+		\end{figure}
+	\end{landscape}
+
+	\subsection{Transportes e sistema viário}
+	% escrito por Caio
 	
 	A luz do que introduz \citeonline[p. 375]{paese2014a}, o planejamento urbano da capital é especialmente marcante devido à década de 1970 e a implantação de um sistema de transporte coletivo sobre pneus baseados em linhas expressas de ônibus, que atualmente operam com veículos biarticulados em vias segregadas. A inserção das vias segregadas se dá a partir de uma lógica de eixos trinários radiais (centro-bairro/bairro-centro), que contribuíram para estruturar o adensamento construtivo e a verticalização:
 	
@@ -1071,7 +1250,8 @@ oldfontcommands,
 		\legend{Fonte: \citeonline[p. 385]{paese2014a}}
 	\end{figure}
 	
-	\section{Habitação}
+	\subsection{Habitação}
+	% TODO - tem plágio
 	
 	\begin{citacao}
 		``Nos anos 80, uma forte crise econômica no Brasil faz com que o poder público seja pressionado a responder as necessidades básicas sociais, ampliando as áreas destinadas à habitação popular. Em Curitiba, ocorreu no final desta década, a ocupação de um dos últimos grandes vazios urbanos oficiais, chamado Bairro Novo. [\dots]'' \cite[p. 54]{castro2005a}
@@ -1089,23 +1269,28 @@ oldfontcommands,
 	
 	De acordo com a pesquisa de Vaccari, a constatação de que a moradia não foi arrolada legalmente como FPIC na RMC e não constitui elemento orientador da atuação da Coordenação da Região Metropolitana de Curitiba (COMEC), desde a sua criação, associada à atuação setorial e desvinculada de uma política pública de moradia metropolitana do Governo do Estado do Paraná e da Prefeitura Municipal de Curitiba no tratamento da problemática da moradia na metrópole, permitiram formular o problema de pesquisa, que parte basicamente do fato de que, se a moradia pode ser entendida como geradora das demais demandas da população urbano-metropolitana e, portanto, transversal e articuladora das demais FPICs, o não reconhecimento da moradia como questão central e crucial ao planejamento territorial, reforça o tratamento setorial das políticas urbanas, aprofundando as desigualdades socioespaciais. Assim, o não reconhecimento da moradia como FPIC pela entidade metropolitana contribui para o enfraquecimento do planejamento urbano como tributário do acesso à metrópole em Curitiba, bem como da própria entidade metropolitana, que deveria ser a instância mediadora e articuladora dos entes federativos para a gestão dos interesses comuns metropolitanos.
 	
-	\section{Outras funções públicas de interesse comum}
+	\subsection{Outras funções públicas de interesse comum}
+	% eu acho que foi feito por Gustavo
 	
 	A \gls{rmc} possui o Consórcio Intermunicipal para Gestão dos Resíduos Sólidos Urbanos, que é composto pelos municípios de: Almirante Tamandaré; Araucária; Balsa Nova; Campina Grande do Sul; Campo Largo; Campo Magro; Colombo; Contenda; Curitiba; Fazenda Rio Grande; Mandirituba; Pinhais; Quatro Barras; Quitandinha, e São José dos Pinhais. O prazo de duração do consórcio é indeterminado.
 	
-	\chapter{Gestão}
+	\section{Gestão}
 	
-	\section{COMEC}
+	\subsection{COMEC}
 	
-	\section{IPARDES}
+	\subsection{IPARDES}
 	
-	\section{IPPUC}
+	\subsection{IPPUC}
 	
-	\chapter{Orçamento e financiamento}
+	\section{Orçamento e financiamento}
 	
 	Pendente. Ninguém contribuiu desde 14/out.
 	
-	\chapter{Governança}
+	\section{Governança}
+	
+	\chapter{Prognóstico}
+	
+	
 	
 	\chapter{Considerações finais}
 	
@@ -1165,22 +1350,20 @@ oldfontcommands,
 	
 	% ---
 	% Inicia os apêndices. Não esquecer de fechar ao final de
-	% todos os apêndices (\end{apendicesenv})
+	% cada um dos apêndices (\end{apendicesenv})
 	% ---
-	%\begin{apendicesenv}
+	\begin{apendicesenv}
 	
 	% Imprime uma página indicando o início dos apêndices
-	%\partapendices
+	\partapendices
 	
 	% ----------------------------------------------------------
-	%\chapter{Primeiro apêndice}
+	\chapter{Jupyter Notebook} \label{ap:jupyter}
 	% ----------------------------------------------------------
 	
-	%Este é um exemplo de inclusão de capítulos de %apêndice em uma 
-	%monografia.  Cada apêndice é tratado como se fosse %um capítulo.
-	%Os apêndices devem ser iniciados pelo comando de %ambiente
-	%\textbackslash begin\{apendicesenv\} e encerrados %pelo comando 
-	%\textbackslash end\{apendicesenv\}.
+	Este apêndice transcreve integralmente o arquivo utilizado para geração do modelo de agrupamento por similaridade (vide \autoref{sec:machine}).
+	
+	\lstinputlisting[language=Python]{../modelo/notebook_clusters_sem_blob.ipynb}
 	
 	% ----------------------------------------------------------
 	%\chapter{Segundo apêndice}
@@ -1188,7 +1371,7 @@ oldfontcommands,
 	
 	%Este é um exemplo de inclusão de um segundo apêndice. 
 	
-	%\end{apendicesenv}
+	\end{apendicesenv}
 	% ---
 	
 	
