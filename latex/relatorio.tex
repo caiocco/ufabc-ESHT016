@@ -308,6 +308,11 @@ oldfontcommands,
 	description={Fundação João Pinheiro}
 }
 
+\newglossaryentry{brt}{
+	name={BRT},
+	description={Bus Rapid Transit}
+}
+
 %-----------------------------------------------------------
 %-----------------------------------------------------------
 % Comandos para definir ambientes tipo teorema em português 
@@ -768,6 +773,7 @@ oldfontcommands,
 	\end{citacao}
 
 	\section{Machine Learning no processo de diagnóstico da RMC} \label{sec:machine}
+	% feito pela Mari, totalmente responsável pela metodologia e adoção da técnica
 	
 	\subsection{Machine Learning}
 	
@@ -789,13 +795,12 @@ oldfontcommands,
 	
 	Operacionalmente, o algoritmo inicia sua tentativa de agrupamento de semelhantes com $k$ grupos iniciais (``\textit{seeds}''). Cada dado plotado na matriz tem sua distância euclidiana comparada com um dos $k$ grupos iniciais e é associado ao de menor erro. Esse processo é repetido inúmeras vezes, sendo em que cada uma delas os $k$ grupos são deslocadas para minimizar a distância/erro entre os dados a serem agrupados, até que sua posição seja otimizada e definida. 
 
-	% TODO trocar figura ou colocar fonte
 	\begin{figure}
 		\centering
 		\caption{Representação de operacionalização do K-Means}
 		\label{fig:kmeans}
 		\includegraphics[width=1\linewidth]{img/machine_A}
-		\legend{Elaboração própria}
+		\legend{Fonte: \citeonline{santana2017a}}
 	\end{figure}
 
 	\subsection{Aplicação do K-Means na \gls{rmc}}
@@ -1146,6 +1151,7 @@ oldfontcommands,
 	Entre 1992 e 1997, o número de ocupações irregulares nos municípios do leste enfocados no trabalho – Pinhais, Piraquara e São José dos Pinhais – cresceu cerca de 4,5 vezes em cinco anos, o que pode significar que, a cada ano, instalaram-se precariamente nestes municípios cerca de 5.783 pessoas ou, a cada dia, mais de 15 pessoas, ou quatro famílias, considerando uma média regional de componentes da unidade familiar. Este valor atinge, em 1997, um total de 38.221 pessoas, nos três municípios, em estado de carência generalizada, pois as ocupações irregulares normalmente formam um quadro de extrema precariedade, não apenas quanto aos assentamentos em si, na sua materialidade, mas principalmente no que se refere à precariedade física, de formação profissional e da cidadania dos seus moradores.
 	
 	\subsection{Vocação das franjas rurais - análise do Censo Agropecuário}
+	% análise feita pela Mari
 	
 	O Censo Agropecuário é um levantamento realizado pelo \gls{ibge} a cada 5 anos, salvas exceções de cortes orçamentários, que visa coletar informações sobre estabelecimentos agropecuários e as atividades neles desenvolvidas. Segundo o IBGE, o censo ``tem como unidade de coleta toda unidade de produção dedicada, total ou parcialmente, a atividades agropecuárias, florestais ou aquícolas, subordinada a uma única administração (produtor ou administrador), independentemente de seu tamanho, de sua forma jurídica ou de sua localização, com o objetivo de produção para subsistência ou para venda''\footnote{Para mais informações e acesso aos resultados do último Censo, veja \citeonline{ibgerural2019a}}.
 	
@@ -1235,7 +1241,7 @@ oldfontcommands,
 
 	\begin{table}[h]
 		\centering
-		\caption{Quantidade de cabeças produzidas \gls{rmc}}
+		\caption{Quantidade de cabeças produzidas na \gls{rmc}}
 		\includegraphics{img/rural_B}
 		\label{tab:rural_B}
 		\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
@@ -1321,11 +1327,49 @@ oldfontcommands,
 	No âmbito de uma discussão de caráter metropolitano, \citeonline[p. 376]{paese2014a} tratam com a naturalidade à incorporação dos municípios do entorno ao sistema de transporte, cujos eixos originalmente foram concebidos restritos aos limites da capital. A incorporação dá origem à \glsdesc{rit} (\gls{rit}):
 	
 	\begin{citacao}
-		``As linhas que constituem a RIT são as que podem estabelecer integração físico-tarifária em terminais ou estações com o Sistema de Transporte de Curitiba. É caracterizada por apresentar uma hierarquia de tipos de linhas de ônibus, podendo estar vinculadas a um terminal ou não. As linhas vinculadas a terminais de transporte ou estações--tubos estabelecem uma integração físico-tarifária na qual o passageiro, pagando apenas uma tarifa, pode descer de um ônibus e ingressar em outro que também esteja vinculado ao terminal ou estação-tubo. Os terminais e estações-tubo estão localizados nos municípios integrados, nas vias expressas do sistema de Bus Rapid Transit (BRT) e em outras importantes vias de Curitiba e municípios mais próximos.'' \cite[p. 376]{paese2014a}
+		``As linhas que constituem a RIT são as que podem estabelecer integração físico-tarifária em terminais ou estações com o Sistema de Transporte de Curitiba. É caracterizada por apresentar uma hierarquia de tipos de linhas de ônibus, podendo estar vinculadas a um terminal ou não. As linhas vinculadas a terminais de transporte ou estações--tubos estabelecem uma integração físico-tarifária na qual o passageiro, pagando apenas uma tarifa, pode descer de um ônibus e ingressar em outro que também esteja vinculado ao terminal ou estação-tubo. Os terminais e estações-tubo estão localizados nos municípios integrados, nas vias expressas do sistema de \glsdesc{brt} (\gls{brt}) e em outras importantes vias de Curitiba e municípios mais próximos.'' \cite[p. 376]{paese2014a}
 	\end{citacao}
 	
 	Segundo \citeonline[p. 378]{paese2014a}, além de não atender a uma crescente demanda metropolitana, ``se encontra muito aquém da procura quantitativa e qualitativa, de caráter espaço-temporal, exigida para o deslocamento das pessoas dentro do próprio município de Curitiba''.
 	
+	Com relação à tecnologia adotada, \citeonline[p. 42]{guia2015a} definem o \gls{brt} como um sistema de transporte público coletivo com elevado desempenho, o que se deve a sua também elevada priorização no sistema de mobilidade e adoção de linhas de ônibus estruturais em sua composição. \citeonline[p. 42]{guia2015a} definem como características do \gls{brt} a circulação de linhas troncais com ônibus circulando em pistas ou faixas exclusivas; possibilidade de ultrapassagem, mesmo que apenas nas áreas de paradas; estações de embarque e desembarque dotadas de sistema de bilhetagem com validação externa aos veículos (pré-embarque), fechadas e em nível; desenho universal de acessibilidade; presença de sistemas para controle operacional e monitoramento; prioridade semafórica; e adoção de paradigma de tronco-alimentação para racionalização do sistema de transporte existente, que atua como alimentador do \gls{brt}.
+	
+	A caracterização feita por \citeonline[p. 62]{guia2015a} envolve ainda uma série de aspectos gerais e operacionais. O sistema de \glsdesc{brt} da capital surgiu em 1974, atingindo 81 km de extensão ao longo dos anos, resultando em um atendimento de 2,3 milhões de passageiros na \gls{rit}. As paradas (chamadas de estações-tubo, no caso específico de Curitiba) são posicionadas à direita, sem escalonamento e há a presença de serviços expressos e faixas de ultrapassagem nas paradas. Segundo \citeonline[p. 62]{guia2015a}, o município foi pioneiro ao priorizar o transporte público por meio de corredores exclusivos na década de 1970, que se tornaram eixos estruturadores do crescimento urbano:
+	
+	\begin{citacao}
+		Curitiba foi pioneira na priorização do transporte coletivo com a implantação de seu primeiro corredor exclusivo para a circulação dos ônibus em 1974. O sistema possui inovações operacionais que foram incorporadas ao longo do tempo e a tornaram um modelo para cidades brasileiras e estrangeiras (canaletas, serviços expressos e diretos, terminais, estações tubo, tronco-alimentação). Sua concepção é anterior à utilização do termo \gls{brt}. Atualmente, a Rede Integrada de Transportes atende 13 municípios da região metropolitana com ônibus municipais e intermunicipais. A estruturação do sistema de transporte foi cuidadosamente planejada de forma integrada ao planejamento urbano. Os corredores funcionam como eixos estruturantes para o desenvolvimento urbano pois concentram as demandas pelo transporte por meio do aumento da densidade e da diversificação de usos no entorno.	O Eixo Sul, o mais antigo e mais carregado dos seis corredores, transporta 247 mil 	passageiros por dia entre os terminais Rui Barbosa (no centro) e Pinheirinho, sendo 16 mil por sentido no horário de pico. Assim como os demais eixos, começa a apresentar sinais de saturação. \cite[p. 42]{guia2015a}
+	\end{citacao}
+
+	A \autoref{fig:brt3d} apresenta uma perspectiva tridimensional de um corredor \gls{brt} com paradas à esquerda (estação em ilha no canteiro central), espaço para ultrapassagem, cobrança externa aos veículos e segregação do tráfego existente nas outras vias. A configuração curitibana é similar, mas adota estações com paradas à direita, ou seja, nas extremidades opostas, conforme podemos observar na \autoref{fig:brtsul}.
+	
+	\begin{figure}
+		\centering
+		\caption{Representação de sistema do tipo \glsdesc{brt}}
+		\label{fig:brt3d}
+		\includegraphics[width=0.55\linewidth]{img/guiatpc2018a_01}
+		\legend{Fonte: \citeonline[p. 48]{guiatpc2018a}}
+	\end{figure}
+	
+	\begin{figure}
+		\centering
+		\caption{Fotografia de estação-tubo e ônibus articulado no \gls{brt} de Curitiba}
+		\label{fig:brtsul}
+		\includegraphics[width=0.55\linewidth]{img/guiatpc2018a_03}
+		\legend{Fonte: \citeonline[p. 42]{guiatpc2018a}}
+	\end{figure}
+
+	A \autoref{tab:tabonibus} sistematiza as características dos três tipos possíveis de infraestrutura para circulação priorizada de ônibus: faixa exclusiva, corredor central e \gls{brt}.
+	
+	\begin{landscape}
+		\begin{table}
+			\centering
+			\caption{Quadro-síntese das características para soluções de infraestrutura de priorização com uso de ônibus}
+			\label{tab:tabonibus}
+			\includegraphics[width=0.75\linewidth]{img/guiatpc2018a_02}
+			\legend{Fonte: \citeonline[p. 50]{guiatpc2018a}}
+		\end{table}
+	\end{landscape}
+		
 	Institucionalmente, o arranjo entre o transporte se dá da seguinte maneira:
 	
 	\begin{citacao}
@@ -1372,7 +1416,7 @@ oldfontcommands,
 	De acordo com a pesquisa de Vaccari, a constatação de que a moradia não foi arrolada legalmente como FPIC na RMC e não constitui elemento orientador da atuação da Coordenação da Região Metropolitana de Curitiba (COMEC), desde a sua criação, associada à atuação setorial e desvinculada de uma política pública de moradia metropolitana do Governo do Estado do Paraná e da Prefeitura Municipal de Curitiba no tratamento da problemática da moradia na metrópole, permitiram formular o problema de pesquisa, que parte basicamente do fato de que, se a moradia pode ser entendida como geradora das demais demandas da população urbano-metropolitana e, portanto, transversal e articuladora das demais FPICs, o não reconhecimento da moradia como questão central e crucial ao planejamento territorial, reforça o tratamento setorial das políticas urbanas, aprofundando as desigualdades socioespaciais. Assim, o não reconhecimento da moradia como FPIC pela entidade metropolitana contribui para o enfraquecimento do planejamento urbano como tributário do acesso à metrópole em Curitiba, bem como da própria entidade metropolitana, que deveria ser a instância mediadora e articuladora dos entes federativos para a gestão dos interesses comuns metropolitanos.
 	
 	\subsection{Outras funções públicas de interesse comum}
-	% eu acho que foi feito por Gustavo
+	% eu acho que foi feito por um dos Gustavos
 	
 	A \gls{rmc} possui o Consórcio Intermunicipal para Gestão dos Resíduos Sólidos Urbanos, que é composto pelos municípios de: Almirante Tamandaré; Araucária; Balsa Nova; Campina Grande do Sul; Campo Largo; Campo Magro; Colombo; Contenda; Curitiba; Fazenda Rio Grande; Mandirituba; Pinhais; Quatro Barras; Quitandinha, e São José dos Pinhais. O prazo de duração do consórcio é indeterminado.
 	
@@ -1385,8 +1429,14 @@ oldfontcommands,
 	\subsection{IPPUC}
 	
 	\section{Orçamento e financiamento}
-	
-	Pendente. Ninguém contribuiu desde 14/out.
+		
+	\begin{figure}
+		\centering
+		\caption{Receita Municipal per capita segundo o tamanho dos municípios da \gls{rmc}}
+		\includegraphics[width=1.0\linewidth]{img/orcamento_A}
+		\label{fig:orcamento}
+		\legend{Elaboração própria}
+	\end{figure}
 	
 	\section{Governança}
 	
