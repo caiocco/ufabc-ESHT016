@@ -837,8 +837,11 @@ oldfontcommands,
 	
 	Para a aplicação da técnica K-Means neste trabalho, foi utilizada a sintaxe de programação Python por meio do software Jupyter Notebook. Todo o código desenvolvido encontra-se no \autoref{ap:jupyter} deste documento
 	
-	\subsection{Público}
+	\subsubsection{Público}
+	
 	Como o objetivo deste modelo estatístico era ajudar no diagnóstico da \glsdesc{rmc}, a granularidade do público considerada, ou seja, os pontos a serem plotados na matriz e clusterizados/agrupados, foram todas as 29 cidades que compõe atualmente a \gls{rmc}.
+	
+	\subsubsection{Variáveis}
 	
 	As variáveis utilizadas no desenvolvimento do modelo foram extraídas das seguintes fontes:
 	
@@ -855,7 +858,7 @@ oldfontcommands,
 	
 	Por fim, foram mantidas 107 variáveis. Através delas, buscamos representar ao máximo todas as esferas possíveis de cada uma das cidades como emprego, renda, mobilidade, saneamento, qualidade de vida, evolução populacional, etc, para ter um bom diagnóstico da situação. Importante ressaltar que não foram utilizadas variáveis cartográficas propositalmente, para não enviesar o modelo a criar clusters por distâncias absolutas entre cidades.
 	
-	\subsection{Resultado do processo}
+	\subsubsection{Resultado do processo}
 	
 	O algoritmo K-Means gerou um bom resultado utilizando-se de 5 clusters, segundo o \textit{output} representado pela \autoref{fig:kmeansoutput}:
 	
@@ -863,7 +866,7 @@ oldfontcommands,
 		\centering
 		\caption{Output K-Means Jupyter Notebook}
 		\label{fig:kmeansoutput}
-		\includegraphics{img/machine_B}
+		\includegraphics[width=0.5\linewidth]{img/machine_B}
 		\legend{Elaboração própria}
 	\end{figure}
 
@@ -871,7 +874,7 @@ oldfontcommands,
 	
 	Dos outros quatro grupos formados, podemos notar que os dois pontos no centro da matriz estão sobrepostos. Em análise analítica, pudemos constatar que estes clusters não possuem distância significativa de centroide e por isto, para este exercício, serão agrupados e considerados como um só.
 	
-	Aplicando o resultado no mapa, temos a \autoref{fig:rmcclusters}:
+	Aplicando o resultado no mapa, temos a \autoref{fig:rmcclusters}.
 	
 	\begin{landscape}
 		\begin{figure}
@@ -1081,7 +1084,7 @@ oldfontcommands,
 	
 	\begin{table}
 		\centering
-		\caption{PIB a preços correntes e PIB per capita , por unidade espacial (2006-2010)}
+		\caption{\gls{pib} a preços correntes e \gls{pib} per capita, por unidade espacial (2006-2010)}
 		\includegraphics[width=1.0\linewidth]{img/costa2015a_10}
 		\label{tab:costa2015a_10}
 		\legend{Fonte: \citeonline[p. 11]{costa2015a}}
@@ -1291,6 +1294,15 @@ oldfontcommands,
 	Em suma, no setor da Pecuária as conclusões são bastante similares em relação ao setor da Agricultura, tanto em termos de proporções de produção e produtividade, quanto nos municípios relevantes em cada uma das Franjas analisadas.
 
 	\section{Funções públicas de interesse comum}
+	% escrito por Mari
+	
+	As funções públicas de interesse comum (\gls{fpic}s) metropolitanas são provenientes, principalmente, dos artigos 23 e 30 da Constituição Federal de 1988. Segundo \citeonline[p. 145]{cesar2017a}, ``o art. 23 cuida da competência executiva comum, compartilhada por todos os entes federados enquanto o art. 30 trata das competências exclusivas dos municípios, com destaque para seu inciso V, que atribui ao município a organização e prestação, direta ou sob o regime de concessão ou permissão, os serviços públicos de interesse local''.
+	
+	Entretanto, segundo \cite{barroso2007a}, o interesse local dificilmente será exclusivo de um município. Este é parte de um fenômeno vivo que, com o evoluir dos eventos sociais, aumenta sua abrangência territorial. Neste sentido, a Constituição Federal assente a particularidade das áreas urbanas, e permite a instituição de regiões metropolitanas para que seja feita a correta gestão e o devido planejamento das funções públicas de interesse comum.
+	
+	Portanto, segundo \citeonline[p. 146]{cesar2017a}, tem-se como objetivo principal da gestão das \gls{fpic}s ``o desenvolvimento econômico e social da região metropolitana, a partilha equilibrada dos seus benefícios e a definição de políticas compensatórias dos efeitos da sua polarização''.
+	
+	Assim sendo, trataremos nesta seção da caracterização das principais \gls{fpic}s da \glsdesc{rmc}, e, logo em seguida, baseando-se nas situações relevantes retratadas, apresentaremos nossa proposta de gestão.
 	
 	\subsection{Recursos hídricos e proteção ambiental}
 	% escrito por Caio
@@ -1311,7 +1323,7 @@ oldfontcommands,
 		``A \glsdesc{rmc} - \gls{rmc} está localizada próxima as cabeceiras da Bacia do Iguaçu, na Serra do Mar, que é o seu principal manancial de abastecimento e portanto a disponibilidade de água de boa qualidade representa um dos importantes fatores de limitação do desenvolvimento da região.''
 	\end{citacao}
 
-	Como recomenda \cite[p. 6]{andreoli1999a},``os mananciais para abastecimento público devem apresentar uma distância das cidades a serem abastecidas viável em termos econômicos sem perder de vista o equilíbrio de sua preservação'', no entanto, a \gls{rmc} viola a recomendação, uma vez que os mananciais são caracterizadas pela proximidade com uma urbanização que se expandiu espontaneamente sobre eles, o que se traduz em: (i) abandono dos investimentos realizados; e (ii) formação de ``verdadeiros cadáveres hídricos, que poluem e envergonham as cidades''.
+	Como recomenda \citeonline[p. 6]{andreoli1999a},``os mananciais para abastecimento público devem apresentar uma distância das cidades a serem abastecidas viável em termos econômicos sem perder de vista o equilíbrio de sua preservação'', no entanto, a \gls{rmc} viola a recomendação, uma vez que os mananciais são caracterizadas pela proximidade com uma urbanização que se expandiu espontaneamente sobre eles, o que se traduz em: (i) abandono dos investimentos realizados; e (ii) formação de ``verdadeiros cadáveres hídricos, que poluem e envergonham as cidades''.
 
 	\subsection{Saneamento básico}
 	% feito pela Mari e incorporado em 15/12/2019
