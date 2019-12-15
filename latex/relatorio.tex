@@ -774,6 +774,7 @@ oldfontcommands,
 	O \textit{Machine Learning} é uma sub-área de inteligência artificial, na qual o termo se refere à capacidade dos sistemas de computação de encontrar soluções para problemas de forma independente, reconhecendo padrões nos bancos de dados \cite{jordan2015a}. Em outras palavras: o Machine Learning permite que os sistemas de TI reconheçam padrões com base nos algoritmos e conjuntos de dados existentes, e desenvolvam conceitos e soluções adequadas com sem depender do \textit{input} e, logo, da subjetividade humana. 
 	
 	A autonomia e imparcialidade dos resultados trazidos pelo Machine Learning, assim como sua praticidade, são, segundo \citeonline{jordan2015a}, alguns dos principais pontos que fizeram com que este modelo de trabalho evoluísse tanto nas últimas duas décadas. 
+	
 	Entretanto, o fator decisivo para que essa técnica fosse tão trabalhada, incentivada e investida, é devido a quantidade de aplicações e campos que ela abrange, desde os mais ligados ao seu próprio setor de tecnologia como reconhecimento de objetos e linguagem natural em robôs, até aplicações em medicina, segurança, \textit{banking} e ciências sociais.
 	
 	\begin{citacao}
@@ -788,6 +789,7 @@ oldfontcommands,
 	
 	Operacionalmente, o algoritmo inicia sua tentativa de agrupamento de semelhantes com $k$ grupos iniciais (``\textit{seeds}''). Cada dado plotado na matriz tem sua distância euclidiana comparada com um dos $k$ grupos iniciais e é associado ao de menor erro. Esse processo é repetido inúmeras vezes, sendo em que cada uma delas os $k$ grupos são deslocadas para minimizar a distância/erro entre os dados a serem agrupados, até que sua posição seja otimizada e definida. 
 
+	% TODO trocar figura ou colocar fonte
 	\begin{figure}
 		\centering
 		\caption{Representação de operacionalização do K-Means}
@@ -1108,6 +1110,8 @@ oldfontcommands,
 	\end{citacao}
 	
 	% TODO parei aqui, dar continuidade às correções sem depender do restante do grupo
+	
+	Segundo \citeonline[p. 137]{lima2001a}
 
 	% TODO plágio de Lima e Mendonça (2001) lima2001a
 	Na década de 90, a crise ambiental existente no conjunto da metrópole torna-se muito evidente, especialmente quanto ao esgotamento dos mananciais de abastecimento público de água. A expansão da ocupação urbana, motivada pelo baixo preço dos lotes, foi direcionada para regiões consideradas inadequadas para urbanização, que compreendem áreas inundáveis e se distribuem na porção sul do município, em zona fronteiriça a outros municípios. Porém, além da ocupação periférica ainda dentro de Curitiba, esta racionalidade fundamentada no baixo custo da terra e o interesse no usufruto das facilidades urbanas implantadas na capital paranaense levaram à continuidade – algumas vezes apenas parcial – da malha urbana curitibana em loteamentos implantados fora da cidade, porém próximos dos terminais de transporte coletivo urbano da capital.
@@ -1125,7 +1129,7 @@ oldfontcommands,
 	\begin{figure}
 		\centering
 		\caption{Comparativo do Total de Lotes Aprovados na Região Metropolitana de Curitiba e Municípios dos Mananciais do Leste Metropolitano (1950-59)}
-		\includegraphics[width=1.0\linewidth]{img/lima2001a_01}
+		\includegraphics[width=0.6\linewidth]{img/lima2001a_01}
 		\label{fig:lima2001a_01}
 		\legend{Fonte: \citeonline[p. 140]{lima2001a}}
 	\end{figure}
@@ -1140,6 +1144,104 @@ oldfontcommands,
 	A várzea do Rio Palmital vem sendo progressivamente ocupada de forma irregular desde os anos 70, transformando-se num grande foco de contaminação dos mananciais usados no abastecimento regional público de água. Essa contaminação é causada, dentre outros motivos, pela ocupação conhecida por “Zumbi dos Palmares”, localizada no município de Colombo, que é uma das três maiores ocupações regionais apresentando mais de 1.000 unidades de sub habitações em 1997, segundo Comec, ou seja, uma população de cerca de 3.800 habitantes assentados, sem infra-estrutura, sobre o leito de inundação do rio. 
 	
 	Entre 1992 e 1997, o número de ocupações irregulares nos municípios do leste enfocados no trabalho – Pinhais, Piraquara e São José dos Pinhais – cresceu cerca de 4,5 vezes em cinco anos, o que pode significar que, a cada ano, instalaram-se precariamente nestes municípios cerca de 5.783 pessoas ou, a cada dia, mais de 15 pessoas, ou quatro famílias, considerando uma média regional de componentes da unidade familiar. Este valor atinge, em 1997, um total de 38.221 pessoas, nos três municípios, em estado de carência generalizada, pois as ocupações irregulares normalmente formam um quadro de extrema precariedade, não apenas quanto aos assentamentos em si, na sua materialidade, mas principalmente no que se refere à precariedade física, de formação profissional e da cidadania dos seus moradores.
+	
+	\subsection{Vocação das franjas rurais - análise do Censo Agropecuário}
+	
+	O Censo Agropecuário é um levantamento realizado pelo \gls{ibge} a cada 5 anos, salvas exceções de cortes orçamentários, que visa coletar informações sobre estabelecimentos agropecuários e as atividades neles desenvolvidas. Segundo o IBGE, o censo ``tem como unidade de coleta toda unidade de produção dedicada, total ou parcialmente, a atividades agropecuárias, florestais ou aquícolas, subordinada a uma única administração (produtor ou administrador), independentemente de seu tamanho, de sua forma jurídica ou de sua localização, com o objetivo de produção para subsistência ou para venda''\footnote{Para mais informações e acesso aos resultados do último Censo, veja \citeonline{ibgerural2019a}}.
+	
+	Nesta subseção, buscamos caracterizar as franjas rurais da \gls{rmc} por meio dos principais dados coletados durante o último censo realizado (2017). Para isto, consideramos como Franja Norte as cidades de Bocaiúva do Sul, Tunas do Paraná, Adrianópolis, Cerro Azul e Doutor Ulysses, e como Franja Sul observamos Tijucas do Sul, Agudos do Sul, Mandirituba, Piên, Rio Negro, Campo do Tenente, Quitandinha, Contenda, Lapa e Balsa Nova.
+	
+	\subsubsection{Agricultura}
+	
+	O primeiro dado observado para entendermos as características do setor agropecuário das franjas da \glsdesc{rmc}, foi a quantidade produzida em toneladas por município. Os dados coletados estão representados cartograficamente na \autoref{fig:qtdeagro}.
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Produção da agricultura por município das franjas da \gls{rmc}}
+			\label{fig:qtdeagro}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_censorural_QTDE_PRODUZIDA_AGRO}
+			\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+		\end{figure}
+	\end{landscape}
+	
+	É possível notar a partir da \autoref{fig:qtdeagro} a grande diferença no total absoluto produzido por cada uma das franjas. A Franja Norte produziu, no total, 32.367 toneladas de produtos do setor agropecuário no mesmo período em que a Franja Sul produziu 575.324 toneladas. Podemos explicar esta situação através de dois fatores: o primeiro fator é o total da área destinada a esse tipo de atividade, que foi de 73 km² para Franja Norte e 1.323 km² para Franja Sul. Em análise detalhada no nível município, a correlação entre área ocupada para lavoura e o total de sua produção é de 99.4\%. O segundo fator é a produção média por estabelecimento, que foi de 41,23 toneladas/ano na Franja Sul e 15,69 toneladas/ano na Franja Norte. Este mesmo indicador por município está distribuído conforme a \autoref{fig:qtdeestabagro}.
+	
+	Analisamos também a quantidade de estabelecimentos que se declaram agropecuários em comparação à área total do município. Desta forma, temos a concentração por quilometro quadrado deste tipo de atividade em cada uma das cidades da RM. Trata-se de uma dinâmica que foi espacializada na \autoref{fig:qtdekmagro}.
+	
+	Pode-se notar que, como esperado, no geral, os municípios da Franja Sul possuem uma concentração maior de estabelecimentos agropecuários por quilometro quadrado. Consolidando os números por franja, enquanto a Franja Sul possui 1.79 estabelecimentos/km², a Franja Norte possui, na média, 2.73 estabelecimentos/km². 
+	
+	Quanto ao tipo de produto que cada uma das regiões possui, analisamos a quantidade produzida nas lavouras temporárias, que representam 99\% da manufatura de acordo com os dados coletados pelo IBGE. Tem-se a configuração organizada na \autoref{tab:rural_A}:
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Produção da agricultura por estabelecimento das franjas da \gls{rmc}}
+			\label{fig:qtdeestabagro}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_censorural_QTD_ESTAB_AGRO}
+			\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+		\end{figure}
+	\end{landscape}
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Estabelecimentos de agricultura por km das franjas da \gls{rmc}}
+			\label{fig:qtdekmagro}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_censorural_QTD_ESTAB_KM_AGRO}
+			\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+		\end{figure}
+	\end{landscape}
+	
+	\begin{table}
+		\centering
+		\caption{Produtos por franja da \gls{rmc}}
+		\includegraphics[width=1\linewidth]{img/rural_A}
+		\label{tab:rural_A}
+		\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+	\end{table}
+
+	Pela \autoref{tab:rural_A} é possível perceber as diferenças nos produtos das lavouras temporárias por franja. Na Franja Sul, a produção de grãos como aveia, milho, trigo, feijão e principalmente soja representam 77.5\% do total manufaturado, enquanto para Franja Norte este número cai para 57.2\%, sendo que em Adrianópolis ele chega a apenas 6.6\%. Outras produções relevantes para a Franja Sul são as da batata (8.1\%) e do fumo (6.2\%), mas não chegam nem perto da representatividade da lavoura dos grãos.
+
+	A Franja Norte possui sua manufatura um pouco menos concentrada em relação à Franja Sul. Apesar de, como falado anteriormente, ter 57.2\% de lavoura voltada aos grãos, as produções de mandioca e cana-de-açúcar são responsáveis por 23\% e 19\% respectivamente, sendo que o município que concentra a manufatura da cana é Adrianópolis e a mandioca são Cerro Azul e Doutor Ulysses.
+	
+	\subsubsection{Pecuária}
+	
+	Assim como no setor da Agricultura, iniciamos a análise da Pecuária nas franjas da Região Metropolitana de Curitiba através da quantidade produzida (cabeças) por município. A série de dados apresenta a distribuição expressa cartograficamente na \autoref{fig:qtdepec}.
+	
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Produção da pecuária por município das franjas da \gls{rmc}}
+			\label{fig:qtdepec}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_censorural_QTDE_PRODUZIDA_AGRO}
+			\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+		\end{figure}
+	\end{landscape}
+
+	\begin{landscape}
+		\begin{figure}
+			\centering
+			\caption{Produção da pecuária por estabelecimento das franjas da \gls{rmc}}
+			\label{fig:qtdeestabpec}
+			\includegraphics[width=0.85\linewidth]{../gis/produtos/RMC_censorural_QTD_ESTAB_PEC}
+			\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+		\end{figure}
+	\end{landscape}
+
+	Pode-se notar facilmente através do mapa as disparidades entre as quantidades produzidas por franja. A Franja Norte produziu no total 233.832 cabeças, enquanto a Franja Sul produziu 5.582.118. Para este setor, o IBGE não disponibiliza a área total destinada à atividade, e por este motivo não é possível realizar a análise de espaço ocupado por produção. Entretanto, a análise da produção média por estabelecimento mostrou o mesmo resultado do setor da Agricultura: a Franja Norte produziu 66,49 cabeças por estabelecimento, enquanto a Franja Sul produziu 805,85. A \autoref{fig:qtdeestabpec} apresenta um mapa deste indicador por estabelecimento.
+	
+	Quanto à espécie da pecuária, podemos também notar os mesmos padrões encontrados no setor Agropecuário. A Franja Sul concentra sua produção em uma espécie (aves - 98\%), enquanto a Franja Norte possui uma produção menos centralizada. Tem-se a \autoref{tab:rural_B}.
+
+	\begin{table}[h]
+		\centering
+		\caption{Quantidade de cabeças produzidas \gls{rmc}}
+		\includegraphics{img/rural_B}
+		\label{tab:rural_B}
+		\legend{Elaboração própria. Fonte: Censo Agropecuário 2017 do IBGE}
+	\end{table}
+
+	Em suma, no setor da Pecuária as conclusões são bastante similares em relação ao setor da Agricultura, tanto em termos de proporções de produção e produtividade, quanto nos municípios relevantes em cada uma das Franjas analisadas.
 
 	\section{Funções públicas de interesse comum}
 	
