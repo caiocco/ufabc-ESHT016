@@ -4,9 +4,9 @@ Oficina de Planejamento e Governança Metropolitana
 Acesso rápido
 -------------
 
-Para descarregar a versão mais recente do caderno de sustentação em formato [PDF](https://pt.wikipedia.org/wiki/Portable_Document_Format), [clique aqui](https://github.com/caiocco/ufabc-ESHT016/raw/master/latex/relatorio_otimizado.pdf).
+Para descarregar a versão mais recente do caderno de sustentação em formato [PDF (Portable Document Format)](https://pt.wikipedia.org/wiki/Portable_Document_Format), [clique aqui](https://github.com/caiocco/ufabc-ESHT016/raw/master/latex/relatorio_otimizado.pdf).
 
-Para acessar o diretório do repositório com os mapas em alta resolução em formato PNG ([Portable Network Graphics](https://pt.wikipedia.org/wiki/PNG)), [clique aqui](https://github.com/caiocco/ufabc-ESHT016/tree/master/gis/produtos).
+Para acessar o diretório do repositório com os mapas em alta resolução em formato [PNG (Portable Network Graphics](https://pt.wikipedia.org/wiki/PNG)), [clique aqui](https://github.com/caiocco/ufabc-ESHT016/tree/master/gis/produtos).
 
 **Este trabalho ainda está em desenvolvimento.**
 
