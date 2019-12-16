@@ -118,6 +118,8 @@ oldfontcommands,
 % .bib com conteúdo de exemplo, evitando a edição de um arquivo
 % .bib somente para a bibliografia
 \usepackage{filecontents}
+% Caio - para inclusao de PDFs
+\usepackage{pdfpages}
 
 % Caio - diagramas
 % http://www.texample.net/tikz/examples/smart-priority/
@@ -1158,7 +1160,7 @@ oldfontcommands,
 	\subsection{Ocupação Desordenada}
 	% reescrito por Caio, que também acrescentou mais coisas
 	
-	\subsubsection{Antecedentes - 1950-1960}
+	\subsubsection{Antecedentes - 1950--1960}
 	Segundo \citeonline[p. 53]{castro2005a}, Curitiba observa a implementação de seus sistemas viários a partir da Segunda Guerra Mundial, processo este que a favorece como um ``centro de convergência e distribuição de grande parte da produção econômica no estado'' \apud[p. 52]{ipea2001a}{castro2005a}. Na mesma época surgem também (i) o primeiro assentamento precário do município, uma vez que a ocupação urbana fora impulsionada pelo processo de industrialização; e (ii) o planejamento urbano formal, por meio do Plano Agache de 1943, ``que tinha por objetivo definir as diretrizes de crescimento e ordenamento da cidade'', elencando ``o saneamento, o descongestionamento de vias e a definição de áreas para a habitação, serviços e indústrias'' como prioridade \cite[p. 52]{castro2005a}.
 	
 	No território do que posteriormente viria a ser a \gls{rmc}, observou-se na mesma década um contingente de 210.852 habitantes, fruto principalmente de migrações internas \cite[p. 53]{castro2005a}, no entanto, o crescimento foi maior nos municípios vizinhos entre as décadas de 1940 e 1950, pois estes cresceram 100\% ante 28\% de Curitiba \apud[p. 53]{schussel2001a}{castro2005a}.
@@ -1197,7 +1199,7 @@ oldfontcommands,
 		\end{figure}
 	\end{landscape}
 	
-	\subsubsection{Antecedentes - 1970-1980} \label{sec:ocup1970}
+	\subsubsection{Antecedentes - 1970--1980} \label{sec:ocup1970}
 
 	No bojo da elaboração do \gls{pdi} de 1978, começa a ser implantada a malha viária do município em conjunto com o Plano Diretor, bem como ações que permitissem o adensamento na envoltória dos eixos rodoviários, consequentemente elevando a demanda de passageiros. \cite[p. 53]{castro2005a}. Trata-se de um plano pioneiro para organização territorial regional, como sublinha \citeonline[p. 138]{lima2001a}, que justifica o pioneirismo elencando a articulação de dados regionais ineditamente analisados sob um recorte metropolitano, que por sua vez definiu diretrizes funcionais que buscava um desenvolvimento sustentável e dinamicamente equilibrado:
 	
@@ -1626,7 +1628,7 @@ oldfontcommands,
 		\caption{\glsdesc{ugb} de Portland}
 		\includegraphics[width=0.9\linewidth]{img/jun2004a_01}
 		\label{fig:ugbjun}
-		\legend{Fonte: \citeonline[p. 1335]{jun2004a}}
+		\legend{Fonte: adaptado de \citeonline[p. 1335]{jun2004a}}
 	\end{figure}
 	
 	O plano previa uma série de desenhos-tipo, conforme \cite[p. 10--11, tradução e grifo nossos]{metro2000a}:
@@ -1751,6 +1753,8 @@ oldfontcommands,
 	% ----------------------------------------------------------
 	
 	Esta é a minuta de lei elaborada com base no Prognóstico (\autoref{sec:prognostico}).
+	
+	\includepdf{minuta.pdf}
 	
 	\end{apendicesenv}
 	% ---
